@@ -110,7 +110,7 @@ camera.fov = 40
 
 
 
-background = Entity(model='quad',z = 0.1, scale=(100, 100), texture = 'assets\mario world.png')
+background = Entity(model='quad',z = 0.1, scale=(100, 100), texture = 'assets/mario world.png')
 
 
 app.run()
