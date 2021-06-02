@@ -13,7 +13,7 @@ class Goomba(Entity):
         self.left_right = False#false = left, true = right
         self.Squashed = False
         self.Squashed_clock=0
-        self.textures = ['assets\goomba_s\\tile000.png','assets\goomba_s\\tile000.png','assets\goomba_s\\tile001.png','assets\goomba_s\\tile001.png']
+        self.textures = ['assets/goomba_s/tile000.png','assets/goomba_s/tile000.png','assets/goomba_s/tile001.png','assets\goomba_s/tile001.png']
         self.current_texture = 0
         self.Squashed_colloder = Entity(model='cube', scale=(self.scale_x - 0.7, 0.06), collider='box', visible=False)
         self.Static_Y = self.y
