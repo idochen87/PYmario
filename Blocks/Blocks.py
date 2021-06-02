@@ -8,7 +8,7 @@ class LuckBlock(Entity):
         self.model = 'quad'
         self.collider = 'box'
         self.scale = (1, 1)
-        self.texture = 'assets\Blocks\lucky_block.jpg'
+        self.texture = 'assets/Blocks/lucky_block.jpg'
         self.Coin_Clock = 0
         self.Ori_y = -1#self.y
 
