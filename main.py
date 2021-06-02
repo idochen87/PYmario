@@ -4,8 +4,8 @@ from Enemys import goomba
 from Blocks import Blocks
 
 #tiles
-ground = 'assets\D.png'
-Bricks = 'assets\Blocks\Bricks.png'
+ground = 'assets/D.png'
+Bricks = 'assets/Blocks/Bricks.png'
 
 
 game_map = [[0,0,0,0,0,0,0,0,0,0,0,0,0,70,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
@@ -54,16 +54,16 @@ def update():
     global cuurent_texture
 
     if mario.moving_state == 'idle_left':
-        mario.texture = 'assets\mario_Move\Left\\tile000.png'
+        mario.texture = 'assets/mario_Move/Left/tile000.png'
     if mario.moving_state == 'idle_right':
-        mario.texture = 'assets\mario_Move\Right\\tile000.png'
+        mario.texture = 'assets/mario_Move/Right/tile000.png'
         cuurent_texture = 0
 
     if mario.moving_state == 'jump':
        if mario.jump_state == 'r':
-           mario.texture = 'assets\mario_Move\Right\\tile006.png'
+           mario.texture = 'assets/mario_Move/Right/tile006.png'
        if mario.jump_state == 'l':
-           mario.texture = 'assets\mario_Move\Left\\tile006.png'
+           mario.texture = 'assets/mario_Move/Left/tile006.png'
 
     if mario.moving_state == 'run_right':
         mario.texture = mario_right_textures[int(cuurent_texture)]
@@ -92,14 +92,14 @@ cuurent_texture = 0
 
 
 
-mario_right_textures = ['assets\mario_Move\Right\\tile001.png',
-                        'assets\mario_Move\Right\\tile002.png',
-                        'assets\mario_Move\Right\\tile003.png',
-                        'assets\mario_Move\Right\\tile003.png']
-mario_left_textures = ['assets\mario_Move\Left\\tile001.png',
-                       'assets\mario_Move\Left\\tile002.png',
-                       'assets\mario_Move\Left\\tile003.png',
-                       'assets\mario_Move\Left\\tile003.png']
+mario_right_textures = ['assets/mario_Move/Right/tile001.png',
+                        'assets/mario_Move/Right/tile002.png',
+                        'assets/mario_Move/Right/tile003.png',
+                        'assets/mario_Move/Right/tile003.png']
+mario_left_textures =   ['assets/mario_Move/Left/tile001.png',
+                         'assets/mario_Move/Left/tile002.png',
+                         'assets/mario_Move/Left/tile003.png',
+                         'assets/mario_Move/Left/tile003.png']
 
 camera.add_script(SmoothFollow(target=mario, offset=[0, 4, -30], speed=3))
 camera.fov = 40
